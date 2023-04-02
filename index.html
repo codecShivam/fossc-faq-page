@@ -2,74 +2,134 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>FOSSCU</title>
-    <link rel="stylesheet" href="app.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>FOSSCU</title>
+  <link rel="stylesheet" href="app.css">
 </head>
 
-<body>
-    <nav class="bg-[#B4E4FF] px-2 h-16 sm:px-4 py-2.5">
-        <div class="container flex  items-center justify-between mx-auto">
-          <a href="#" class="flex self-center pb-1">
-            <img src="logo.png" class="h-12 mr-3 rounded-3xl  sm:h-9" alt="FOSSCU logo " />
-            <span class="self-center text-xl font-bold  text-[#0a3456]">FOSSCU</span>
-          </a>
-          <div class="flex md:order-2">
-            <div class="relative hidden md:block">
-              <input type="text" id="search-navbar"
-                class="  p-2 pl-3 text-sm border bg-slate-50  rounded-lg" placeholder="Search...">
+<body class="bg-[#000300]">
+  <nav class=" px-2 h-16  py-2.5">
+    <div class="container flex  items-center justify-between mx-auto">
+      <a href="https://fosscu.org/" class="flex self-center pb-1">
+        <img src="logo.png" class="h-12 mr-3 rounded-3xl   sm:h-9" style="color: #0dff1c;" alt="FOSSCU logo " />
+        <span class="self-center tracking-tight text-2xl font-bold text-[#0dff1c]" >FOSSCU</span>
+      </a>
+      <ul class="flex flex-row transition duration-300   ">
+        <li>
+          <a href="#"
+            class="  transition duration-300 mr-4 hover:border-b-2 rounded hover:border-[#0dff1c] border-[#0dff1c] hover:text-slate-300 text-white">Home</a>
+        </li>
+        <li>
+          <a href="https://fosscu.org/about"
+            class="  transition duration-300 mr-4 hover:border-b-2 rounded hover:border-[#0dff1c] border-[#0dff1c] hover:text-slate-300 text-white">About</a>
+        </li>
+        <div class="relative group ">
+          <button
+            class="  transition duration-300 mr-4 hover:border-b-2 rounded hover:border-[#0dff1c] border-[#0dff1c] hover:text-slate-300 text-white ">
+            Services
+          </button>
+          <div
+                  class="more_nav translate-x-[-3.2em] hidden absolute bg-white text-gray-900 rounded mt-1 w-48 group-hover:block hover:rounded-md">
+                  <a href="https://fosscu.org/buiding" class="block px-4 py-2 hover:bg-[#0dff1c] rounded-lg">Documentation</a>
+                  <a href="https://fosscu.org/buiding" class="block px-4 py-2 hover:bg-[#0dff1c] rounded-lg">Guides</a>
+                  <a href="https://fosscu.org/buiding" class="block px-4 py-2 hover:bg-[#0dff1c] rounded-lg">Press</a>
+                  <a href="https://fosscu.org/buiding" class="block px-4 py-2 hover:bg-[#0dff1c] rounded-lg"> API Stauts</a>
             </div>
-          </div>
-            <ul
-              class="flex flex-row mt-2 transition duration-300   ">
-              <li>
-                <a href="#"
-                  class="  transition duration-300 mr-4 hover:border-b-2 rounded hover:border-blue-900 border-blue-900 hover:text-slate-500 text-gray-700">Home</a>
-              </li>
-              <li>
-                <a href="#"
-                  class="  transition duration-300 mr-4 hover:border-b-2 rounded hover:border-blue-900 border-blue-900 hover:text-slate-500 text-gray-700">About</a>
-              </li>
-              <div class="relative group ">
-                <button
-                  class="  transition duration-300 mr-4 hover:border-b-2 rounded hover:border-blue-900 border-blue-900 hover:text-slate-500 text-gray-700 ">
-                  Services
-                </button>
-                <!-- <div
-                  class="more_nav  hidden absolute bg-[#75b2f9] text-gray-700 rounded mt-1 w-48 group-hover:block hover:rounded-md">
-                  <a href="#" class="block px-4 py-2 hover:bg-[#4A98FB] rounded-lg">Services</a>
-                  <a href="#" class="block px-4 py-2 hover:bg-[#4A98FB] rounded-lg"></a>
-                  <a href="#" class="block px-4 py-2 hover:bg-[#4A98FB] rounded-lg"></a>
-                  <a href="#" class="block px-4 py-2 hover:bg-[#4A98FB] rounded-lg"> Reviews</a>
-                </div>-->
-              </div> 
-              <div class="relative group ">
-                <button
-                  class=" transition duration-300 mr-4 hover:border-b-2 rounded hover:border-blue-900 border-blue-900 hover:text-slate-500 text-gray-700">
-                  More
-                </button>
-                <!-- <div
-                  class="more_nav  hidden absolute  bg-[#75b2f9] text-gray-700 rounded mt-1 w-48 group-hover:block hover:rounded-md">
-                  <a href="#" class="block px-4  py-2 hover:bg-[#4A98FB] rounded-lg">News & Events</a>
-                  <a href="#" class="block px-4 py-2 hover:bg-[#4A98FB] rounded-lg"></a>
-                  <a href="#" class="block px-4 py-2 hover:bg-[#4A98FB] rounded-lg"></a> 
-                  <a href="#" class="block px-4 py-2 hover:bg-[#4A98FB] rounded-lg"></a>
-                </div> -->
-              </div>
-            </ul>
+        </div>
+        <div class="relative group ">
+          <button
+            class=" transition duration-300 mr-4 hover:border-b-2 rounded hover:border-[#0dff1c] border-[#0dff1c] hover:text-slate-300 text-white">More
+          </button>
+          <div
+                  class="more_nav translate-x-[-3.2em] hidden absolute  bg-white text-gray-900 rounded mt-1 w-48 group-hover:block hover:rounded-md">
+                  <a href="https://fosscu-blog.vercel.app/" class="block px-4 py-2 hover:bg-[#0dff1c] rounded-lg">Blog</a>
+                  <a href="https://fosscu.org/team" class="block px-4 py-2 hover:bg-[#0dff1c] rounded-lg">Team</a>
+                  <a href="https://fosscu.org/building" class="block px-4 py-2 hover:bg-[#0dff1c] rounded-lg">Call for Volunteers</a> 
+                  <a href="https://linktr.ee/fosscu" class="block px-4 py-2 hover:bg-[#0dff1c] rounded-lg">Connect with Us</a>
           </div>
         </div>
-    </nav>
-    <div class="text-center text-gray-600">
-        <h1>Welcome to FOSSCU!</h1>
-        <div>
-            <h2>How can we help you?</h2>
-           
-        </div>
+      </ul>
     </div>
+    </div>
+  </nav>
+  <section class="">
+    <div class="text-center mb-8 text-4xl  tracking-tight font-extrabold text-white ">
+      <h1 class="pt-20 pb-9">Welcome to <span class=" animate-pulse duration-300 text-[#0dff1c]">FOSSCU!</span></h1>
+      <div>
+        <h2 class="pb-2">How can we help you?</h2>
+      </div>
+      <div class="flex justify-center ">
+        <div>
+          <input type="text" id="search" class="text-gray-700  p-2 px-3 pl-4 pr-12 text-sm border bg-slate-50  rounded-lg"
+            placeholder="Search...">
+        </div>
+      </div>
+    </div>
+    <div class="py-8 px-4 mx-auto max-w-screen-xl ">
+      <h2 class="mb-8 text-4xl tracking-tight font-extrabold text-white">Frequently asked questions</h2>
+      <div class="grid md:grid-cols-2  pt-8 text-left border-t  gap-14 border-gray-700 ">
+        <div>
+          <div class="mb-10">
+            <h3 class="flex  items-center mb-4 text-lg font-medium  text-white">
+              What do you mean by "Open Source"?
+            </h3>
+            <p class="text-gray-400">Open source refers to a software development model in which the source code of a program is made freely available to the public, allowing anyone to view, modify, and distribute the code as they see fit.</p>
+          </div>
+          <div class="mb-10">
+            <h3 class="flex items-center mb-4 text-lg font-medium text-white"> 
+              How do I make my first contribution to an open source project?
+            </h3>
+            <p class="text-gray-400"> One common approach is to look for "good first issue" or "beginner-friendly" labels on open issues, which can provide a good entry point for new contributors.</p>
+            <p class="text-gray-400">Feel free to <a href="https://fosscu.org/contact"
+                class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline" >contact us</a> and we'll help you out as soon as we can.</p>
+          </div>
+          <div class="mb-10">
+            <h3 class="flex tracking-tight items-center mb-4 text-lg font-medium text-white">
+              Can I contribute to an open source project even if I am not a developer?
+            </h3>
+            <p class="text-gray-400"> Yes, open source projects often need help with documentation, testing, design, and other non-coding tasks. Check the project's documentation or contact the maintainers to see how you can contribute.</p>
+          </div>
+          <div class="mb-10">
+            <h3 class="flex items-center mb-4 text-lg font-medium text-white">
+              What is the open source community?
+            </h3>
+            <p class="text-gray-400">The open source community is a group of individuals and organizations that collaborate on the development and maintenance of open source software. <br>The community is typically characterized by a spirit of collaboration, transparency, and openness.</p>
+          </div>
+        </div>
+        <div>
+          <div class="mb-10">
+            <h3 class="flex items-center mb-4 tracking-tight text-lg font-medium text-white">
+              What are some benefits of being part of the open source community?
+            </h3>
+            <p class="text-gray-400">The opportunity to collaborate with like-minded individuals, build your skills and experience in software development, and make meaningful contributions to important software projects. <a href="https://fosscu.org/"
+              class="font-medium underline  hover:no-underline" >Join us </a> now. </p>
+          </div>
+          <div class="mb-10">
+            <h3 class="flex items-center mb-4 text-lg font-medium text-white">
+              How can I get involved in the open source community?
+            </h3>
+            <p class="text-gray-400"> There are many ways to get involved in the open source community, including contributing to open source projects, attending events and conferences, participating in online forums and discussion groups, and joining open source communities on social media platforms.</p>
+            </div>
+          <div class="mb-10">
+            <h3 class="flex items-center mb-4 text-lg font-medium text-white">
+              What are some ways to contribute to open source projects?
+            </h3>
+            <p class="text-gray-400"> Some ways to contribute to open source projects include submitting bug reports, suggesting new features, creating documentation, writing code, improving existing code, providing feedback on issues, or helping with community management.</p>
+          </div>
+          <div class="mb-10">
+            <h3 class="flex items-center mb-4 text-lg font-medium text-white">
+              What is a pull request in open source contribution?
+            </h3>
+            <p class="text-gray-400"> A pull request is a proposed change to the codebase of an open source project that is submitted by a contributor for review and potential inclusion in the project.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </body>
 
 </html>
